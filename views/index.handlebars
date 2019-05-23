@@ -1,0 +1,34 @@
+<div class="ml-5 mt-5">
+  {{#each words}}
+  <div class="card m-3" style="width: 28rem;height : 32rem;background-color:transparent; border-style: double;border-width:10px; display: inline-flex">
+
+    <div style="text-align:center;margin-top:20px;margin-bottom:0px;">
+      <h1 class="h1-reponsive white-text text-uppercase font-weight-bold"><strong id="actual_word">{{word}}</strong></h1>
+    </div>
+
+    <div class="card-body">
+      <h3>Definition - <label id="word_definition">{{wordDefinition}}</label></h3>
+      <h3>Parts of Speech - <label id="word_type">{{wordType}}</label></h3>
+      <h3>Example - <label id="word_example">{{wordInSentence}}</label></h3>
+
+      <figure>
+        <audio controls id="word_audio" src="{{wordAudioLink}}">
+
+        </audio>
+      </figure>
+      <div class="input-group mb-1">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox" style="background:transparent" id={{id}} aria-label="Checkbox for following text input">
+          </div>
+        </div>
+        <h4 class="input-group-text" style="font-size:20px; font:bold; text-transform: capitalize; background:transparent">Ready
+          to QUIZ</h4>
+      </div>
+    </div>
+  </div>
+
+
+  {{/each}}
+  <a type="button" class="btn btn-info btn-block btn-lg m-4" id="btn-saveforquiz" href="/practice" >FINISHED PRACTICING TODAYS WORDS</a>
+  </div>

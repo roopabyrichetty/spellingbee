@@ -1,0 +1,60 @@
+body {
+ 
+  background-image: url('https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.table{
+  border:5px black;
+  margin-left: 30%;
+  margin-top: -3%;
+  font-size: 23px;
+}
+
+h3{
+  margin: 20px 0px 20px 20px ;
+  font-size: 20px;
+}
+
+.card
+{
+  border-style: double;
+}
+#container {
+display: inline;
+
+}
+
+ 
+
+.child {
+  display: inline-flex;
+  margin: 20px;
+  border-width:2px;
+  border-style:solid;
+  border-color:black;
+  background: transparent;
+  width:320px;
+  height: 350px;
+  padding: 20px;
+  
+}
+
+.list-group
+{
+  background: transparent;
+}
+
+.list-group-item
+{
+  background: transparent;
+   
+
+}
+
+
+
+
+
+

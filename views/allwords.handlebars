@@ -1,0 +1,19 @@
+<div class="m-5" id="allwords">
+  <div class="row my-5">
+    <div class="col-6"> <h2>Choose your words for today - {{today}}</h2></div>
+    
+  </div> 
+{{#each words}}
+ <div style="width:250px;display: inline-flex;">
+<div class="input-group mb-1" >
+  <div class="input-group-prepend">
+    <div class="input-group-text">
+      <input type="checkbox" style="background:transparent" id={{id}} aria-label="Checkbox for following text input">
+    </div>
+  </div>
+  <h4 class="input-group-text" style="font-size:20px; text-transform: capitalize; background:transparent">{{word}}</h4>
+</div>
+</div>
+{{/each}}
+<a type="button" class="btn btn-info btn-block btn-lg m-4" id="btn-savewords" href="/today" >Finished Choosing Words</a>   
+</div>
